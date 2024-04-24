@@ -50,10 +50,13 @@
 
     .place-order button {
       padding: 10px;
-      background-color: #4CAF50;
+      background-color: #004102;
       color: white;
       border: none;
       cursor: pointer;
+    }
+    .place-order button:hover {
+        background-color: #010901; /* Darker shade when hovered */
     }
 
     .bill {
@@ -101,8 +104,8 @@
     <input type="tel" id="phone">
 
     <div class="place-order">
-      <button type="button" onclick="placeOrder()">Place Order</button>
-      <p id="order-message"></p>
+        <button type="button" class="place-order-btn" onclick="addToCart()">Place Order</button>
+        <p id="order-message"></p>
     </div>
   </div>
 
